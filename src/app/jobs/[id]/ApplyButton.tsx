@@ -33,8 +33,12 @@ export default function ApplyButton({ jobId }: { jobId: string }) {
       }
 
       setSuccess(true);
-    } catch (error: any) {
-      setErrorMessage(error?.message || "Failed to apply");
+    } catch (error) {
+      if (error instanceof Error) {
+        setErrorMessage(error.message);
+      } else {
+        console.error("Unknown error", error);
+      }
     } finally {
       setLoading(false);
     }
