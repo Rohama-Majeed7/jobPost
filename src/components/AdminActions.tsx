@@ -22,6 +22,8 @@ export default function AdminActions({
       });
       setStatus(newStatus);
     } catch (err) {
+      console.log(err);
+      
       alert("Failed to update status.");
     } finally {
       setLoading(false);

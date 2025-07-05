@@ -21,7 +21,7 @@ export default function Home() {
 
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
           Your go-to platform to discover career opportunities or post new job openings.
-          Whether you're hiring or job hunting, we've got you covered.
+          Whether you are hiring or job hunting, we have got you covered.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-8">
