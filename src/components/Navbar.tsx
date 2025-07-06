@@ -18,11 +18,6 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex gap-2">
-            <Link href="/admin" className="flex items-center space-x-2 ">
-              <span className=" font-bold p-1 md:p-2 rounded-md text-indigo-600 border-2 border-indigo-700 tracking-tight">
-                Admin
-              </span>
-            </Link>
             <Link href="/" className="flex items-center space-x-2">
               <span className="text-2xl font-bold text-indigo-600 tracking-tight">
                 JobList
@@ -58,6 +53,11 @@ export default function Navbar() {
                 >
                   Sign Out
                 </button>
+                <Link href="/admin" className="flex items-center space-x-2 ">
+                  <span className=" font-bold p-1 md:p-2 rounded-md text-indigo-600 border-2 border-indigo-700 tracking-tight">
+                    Admin
+                  </span>
+                </Link>
               </>
             ) : (
               <Link
